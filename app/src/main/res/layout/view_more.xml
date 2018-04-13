@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/more_base_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/primaryGrey"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/bt_About"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/buttonBottomOffset"
+        android:layout_marginLeft="@dimen/buttonLeftRightOffset"
+        android:layout_marginRight="@dimen/buttonLeftRightOffset"
+        android:layout_marginTop="@dimen/buttonBottomOffset"
+        android:height="@dimen/button_height"
+        android:background="@drawable/button_border"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/more_AboutPaq"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="@dimen/buttonTextSize" />
+
+    <TextView
+        android:id="@+id/bt_ConnectDevice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/buttonBottomOffset"
+        android:layout_marginLeft="@dimen/buttonLeftRightOffset"
+        android:layout_marginRight="@dimen/buttonLeftRightOffset"
+        android:background="@drawable/button_border"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/more_ConnectDevice"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="@dimen/buttonTextSize" />
+
+    <TextView
+        android:id="@+id/bt_HowTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/buttonBottomOffset"
+        android:layout_marginLeft="@dimen/buttonLeftRightOffset"
+        android:layout_marginRight="@dimen/buttonLeftRightOffset"
+        android:background="@drawable/button_border"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/more_HowTo"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="@dimen/buttonTextSize" />
+
+    <TextView
+        android:id="@+id/bt_ReportProblem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/buttonBottomOffset"
+        android:layout_marginLeft="@dimen/buttonLeftRightOffset"
+        android:layout_marginRight="@dimen/buttonLeftRightOffset"
+        android:background="@drawable/button_border"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/more_ReportProblem"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="@dimen/buttonTextSize" />
+
+</LinearLayout>

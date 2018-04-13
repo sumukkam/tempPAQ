@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.k3vn19.paq">
+
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="true"/>
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+
+    <application
+        android:name=".common.UtilCommon"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".screen.start.controller.StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".screen.main.controller.MainActivity"/>
+        <activity android:name=".screen.alarms.screens.detailedAlarm.controller.DetailedAlarmActivity" />
+        <activity android:name=".screen.more.screens.aboutPAQ.AboutPAQActivity" />
+        <activity android:name=".screen.more.screens.faq.FAQActivity" />
+
+        <!-- need this to make this a service to connect to bluno -->
+        <service
+            android:name=".screen.more.screens.bluetoothFinal.BluetoothLeService"
+            android:enabled="true" />
+
+        <activity android:name=".screen.more.screens.bluetoothFinal.MainActivityBluetooth" />
+
+        <!--
+        <activity android:name=".screen.more.screens.bluetooth.TempBluetoothMainActivity" />
+        <activity android:name=".screen.more.screens.bluetooth.DetailedBluetooth" />
+        <activity android:name=".screen.more.screens.bluetoothTest.BluetoothActivity" />
+        <service android:name=".screen.more.screens.bluetoothTest.BluetoothLeService" android:enabled="true" />-->
+
+    </application>
+
+</manifest>

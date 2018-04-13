@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="primaryYellow">#FCDC3D</color>
+    <color name="primaryGrey">#212121</color>
+    <color name="primaryDarkGrey">#424242</color>
+    <color name="primaryOrange">#FEC349</color> <!-- not used -->
+    <color name="primaryCarbon">#4B4A4C</color>
+    <color name="primaryWhite">#FFFFFF</color>
+    <color name="primaryBlack">#000000</color>
+    <color name="primaryTextColor">#bdbdbd</color>
+    <color name="secondaryTextColor">#666666</color>
+
+
+    <!-- Detailed Alarm View -->
+    <color name="detailedAlarmBackgroundColor">#313131</color>
+    <color name="detailedAlarmTimePickerColor">#454545</color>
+    <color name="detailedAlarmDaysOfWeekToggleOffBackground">#757575</color>
+    <color name="detailedAlarmDaysOfWeekToggleOffTextColor">#FFFFFF</color>
+    <color name="detailedAlarmDaysOfWeekToggleOnBackground">#FDD835</color>
+    <color name="detailedAlarmDaysOfWeekToggleOnTextColor">#000000</color>
+
+    <!-- Alarm Custom View -->
+    <color name="alarmTimeTextColor">#BDBDBD</color>
+    <color name="listViewBorderColor">#333333</color>
+    <color name="alarmItemBackgroundColor">#212121</color>
+    <color name="primaryRed">#8e0b0b</color>
+
+</resources>

@@ -1,0 +1,11 @@
+<resources>
+    <dimen name="detailed_alarm_category_size">28sp</dimen>
+    <dimen name="detailed_alarm_sub_category_size">16sp</dimen>
+    <dimen name="detailed_alarm_category_horizontal_margin">12sp</dimen>
+    <dimen name="detailed_alarm_sub_category_horizontal_margin">22sp</dimen>
+
+    <dimen name="button_height">40dp</dimen>
+    <dimen name="buttonTextSize">20sp</dimen>
+    <dimen name="buttonLeftRightOffset">60dp</dimen>
+    <dimen name="buttonBottomOffset">10dp</dimen>
+</resources>

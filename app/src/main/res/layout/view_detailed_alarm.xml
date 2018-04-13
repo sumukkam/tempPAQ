@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/detailed_linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryGrey"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/primaryDarkGrey"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/cancelAlarm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="15dp"
+            android:layout_weight=".5"
+            android:gravity="center_vertical|start"
+            android:text="@string/cancelAlarm"
+            android:textColor="@color/primaryWhite"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/detailed_alarm_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:gravity="center"
+            android:text="@string/createNewAlarmTitle"
+            android:textColor="@color/primaryWhite"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/saveAlarm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="15dp"
+            android:layout_weight=".5"
+            android:gravity="center_vertical|end"
+            android:text="@string/saveAlarm"
+            android:textColor="@color/primaryWhite"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/timeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TimePicker
+            android:id="@+id/detailed_timePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:timePickerMode="spinner" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <ToggleButton
+            android:id="@+id/sundayToggle"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/days_of_week_toggle_button"
+            android:text=""
+            android:textColor="@color/detailedAlarmDaysOfWeekToggleOffTextColor"
+            android:textOff="@string/toggleSun"
+            android:textOn="@string/toggleSun" />
+
+        <ToggleButton
+            android:id="@+id/mondayToggle"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/days_of_week_toggle_button"
+            android:text=""
+            android:textColor="@color/detailedAlarmDaysOfWeekToggleOffTextColor"
+            android:textOff="@string/toggleMon"
+            android:textOn="@string/toggleMon" />
+
+        <ToggleButton
+            android:id="@+id/tuesdayToggle"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/days_of_week_toggle_button"
+            android:text=""
+            android:textColor="@color/detailedAlarmDaysOfWeekToggleOffTextColor"
+            android:textOff="@string/toggleTues"
+            android:textOn="@string/toggleTues" />
+
+        <ToggleButton
+            android:id="@+id/wednessdayToggle"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/days_of_week_toggle_button"
+            android:text=""
+            android:textColor="@color/detailedAlarmDaysOfWeekToggleOffTextColor"
+            android:textOff="@string/toggleWed"
+            android:textOn="@string/toggleWed" />
+
+        <ToggleButton
+            android:id="@+id/thursdayToggle"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/days_of_week_toggle_button"
+            android:text=""
+            android:textColor="@color/detailedAlarmDaysOfWeekToggleOffTextColor"
+            android:textOff="@string/toggleThurs"
+            android:textOn="@string/toggleThurs" />
+
+        <ToggleButton
+            android:id="@+id/fridayToggle"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/days_of_week_toggle_button"
+            android:text=""
+            android:textColor="@color/detailedAlarmDaysOfWeekToggleOffTextColor"
+            android:textOff="@string/toggleFri"
+            android:textOn="@string/toggleFri" />
+
+        <ToggleButton
+            android:id="@+id/saturdayToggle"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/days_of_week_toggle_button"
+            android:text=""
+            android:textColor="@color/detailedAlarmDaysOfWeekToggleOffTextColor"
+            android:textOff="@string/toggleSat"
+            android:textOn="@string/toggleSat" />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/primaryWhite">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/label_snooze"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/detailed_alarm_category_horizontal_margin"
+                android:layout_marginTop="10dp"
+                android:text="@string/detailed_label_snooze"
+                android:textSize="@dimen/detailed_alarm_category_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/detailed_alarm_sub_category_horizontal_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/label_maxSnooze"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/detailed_numberOfSnooze"
+                    android:textSize="@dimen/detailed_alarm_sub_category_size" />
+
+                <TextView
+                    android:id="@+id/tv_numSnooze"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/initSBValue"
+                    android:textSize="@dimen/detailed_alarm_sub_category_size" />
+            </LinearLayout>
+
+            <SeekBar
+                android:id="@+id/sb_numSnooze"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/detailed_alarm_sub_category_horizontal_margin" />
+
+            <LinearLayout
+                android:id="@+id/detailed_layout_duration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/detailed_alarm_sub_category_horizontal_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/label_snoozeDuration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/detailed_snoozeDuration"
+                    android:textSize="@dimen/detailed_alarm_sub_category_size" />
+
+                <TextView
+                    android:id="@+id/tv_snoozeDuration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/initSBValue"
+                    android:textSize="@dimen/detailed_alarm_sub_category_size" />
+
+            </LinearLayout>
+
+            <SeekBar
+                android:id="@+id/sb_snoozeDuration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/detailed_alarm_sub_category_horizontal_margin" />
+
+            <TextView
+                android:id="@+id/label_Ineractivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/detailed_alarm_category_horizontal_margin"
+                android:layout_marginTop="10dp"
+                android:text="@string/detailed_label_interactivity"
+                android:textSize="@dimen/detailed_alarm_category_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/detailed_alarm_sub_category_horizontal_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/label_intensity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/detailed_intensity"
+                    android:textSize="@dimen/detailed_alarm_sub_category_size" />
+
+                <TextView
+                    android:id="@+id/tv_intensity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/initSBValue"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <SeekBar
+                android:id="@+id/sb_intensity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/detailed_alarm_sub_category_horizontal_margin" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/detailed_alarm_sub_category_horizontal_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/label_seqLength"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/detailed_seqLength"
+                    android:textSize="@dimen/detailed_alarm_sub_category_size" />
+
+                <TextView
+                    android:id="@+id/tv_seqLength"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/initSBValue"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <SeekBar
+                android:id="@+id/sb_seqLength"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/detailed_alarm_sub_category_horizontal_margin" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

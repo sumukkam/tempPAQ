@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primaryGrey</item>
+        <item name="colorPrimaryDark">@color/primaryDarkGrey</item>
+        <item name="colorAccent">@color/primaryYellow</item>
+    </style>
+
+    <style name="ToolbarDesign">
+        <item name="theme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="android:elevation">5dp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="actionOverflowButtonStyle">@style/ToolBarOverflow</item>
+    </style>
+
+    <style name="ToolBarOverflow" parent="@style/Widget.AppCompat.ActionButton.Overflow" >
+        <item name="android:actionBarItemBackground">@android:color/transparent</item>
+    </style>
+
+</resources>

@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">PAQ</string>
+    <string name="toReplace">toReplace</string>
+    <string name="description">Description</string>
+
+
+    <string name="createNewAlarmTitle">New Alarm</string>
+    <string name="saveAlarm">Save</string>
+    <string name="cancelAlarm">Cancel</string>
+
+
+
+    <!-- For setting up tabs in MainView -->
+    <string name="alarmsText">ALARMS</string>
+    <string name="moreText">MORE</string>
+    <string name="stopWatchText">STOPWATCH</string>
+    <string name="timerText">TIMER</string>
+
+    <!-- For view_alarms_list -->
+    <string name="addAlarm">ADD ALARM</string>
+
+    <!-- view_detailed_alarm.xml -->
+    <string name="detailed_label_snooze">Snooze</string>
+    <string name="detailed_numberOfSnooze">Number of Snooze:</string>
+    <string name="detailed_snoozeDuration">Snooze Duration:</string>
+    <string name="detailed_label_interactivity">Interactivity</string>
+    <string name="detailed_intensity">Intensity:</string>
+    <string name="detailed_seqLength">Sequence Length:</string>
+
+    <string name="initTime">6:00</string>
+    <string name="initAMPM">AM</string>
+    <string name="toggleSun">S</string>
+    <string name="toggleMon">M</string>
+    <string name="toggleTues">Tu</string>
+    <string name="toggleWed">W</string>
+    <string name="toggleThurs">Th</string>
+    <string name="toggleFri">F</string>
+    <string name="toggleSat">S</string>
+    <string name="initSBValue">0</string>
+
+
+    <!-- view_more.xml -->
+    <string name="more_AboutPaq">ABOUT PAQ</string>
+    <string name="more_ConnectDevice">CONNECT DEVICE</string>
+    <string name="more_HowTo">HOW TO</string>
+    <string name="more_ReportProblem">REPORT A PROBLEM</string>
+
+
+    <!-- view_faq.xml -->
+    <string name="faq_title">FAQ</string>
+    <string name="faq_q1">Question 1</string>
+    <string name="faq_a1">Answer 1</string>
+    <string name="faq_q2">Question 2</string>
+    <string name="faq_a2">Answer 2</string>
+
+    <!-- customview_alarms_list_view_row.xml -->
+    <string name="replaceRepeat">Repeat</string>
+    <string name="replaceTime">Time</string>
+    <string name="replaceAMPM">AMPM</string>
+
+    <!-- Timer -->
+    <string name="timer_hour">Hours</string>
+    <string name="timer_minute">Minutes</string>
+    <string name="timer_seconds">Seconds</string>
+    <string name="timer_start">Start</string>
+    <string name="timer_cancel">Cancel</string>
+    <string name="TIPreplaceTime">hh:mm</string>
+
+
+    <!-- Stopwatch -->
+    <string name="stopwatch_initTime">00:00:00</string>
+    <string name="stopwatch_start">Start</string>
+    <string name="stopwatch_reset">Reset</string>
+
+</resources>

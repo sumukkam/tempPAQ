@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/more_base_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryGrey"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp">
+
+        <ProgressBar
+            android:id="@+id/pb_timerIP"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:max="10000"
+            android:progress="0"
+            android:progressDrawable="@drawable/circular" />
+
+        <TextView
+            android:id="@+id/TIP_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/TIPreplaceTime"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="45sp" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tempButtonIP"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/buttonBottomOffset"
+            android:layout_marginLeft="@dimen/buttonLeftRightOffset"
+            android:layout_marginRight="@dimen/buttonLeftRightOffset"
+            android:background="@drawable/button_border"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/timer_cancel"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="@dimen/buttonTextSize" />
+    </LinearLayout>
+</LinearLayout>
